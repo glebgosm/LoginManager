@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org" lang="en">
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login Manager</title>
+</head>
+
+<body>
+
+<form th:action="@{/login}" th:object="${userDTO}" th:method="post" >
+    <table align="center">
+        <tr>
+            <td>Login:   </td> <td><input type="text" th:field="*{userName}"/>    </td>
+        </tr>
+        <tr th:if="${noSuchUser!=null && noSuchUser}">
+            <td/><td align="center"><span style="color:red">Username not found</span> </td>
+        </tr>
+        <tr>
+            <td>Password:</td> <td><input type="password" th:field="*{password}"/></td>
+        </tr>
+        <tr th:if="${passwordIsValid!=null && !passwordIsValid}">
+            <td/><td align="center"><span style="color:red">Incorrect password</span> </td>
+        </tr>
+    </table>
+    <p align="center"><input type="submit" value="Login"/></p>
+</form>
+
+</body>
+</html>
