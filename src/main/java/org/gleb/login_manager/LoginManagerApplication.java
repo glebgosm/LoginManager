@@ -8,13 +8,16 @@ import org.gleb.login_manager.dao.UserDAOFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnExpression;
 import org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory;
 import org.springframework.boot.web.servlet.server.ServletWebServerFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Import;
+import org.springframework.context.annotation.PropertySource;
 
 @SpringBootApplication
 @Import(UserDAOFactory.class)
+@PropertySource(value = "classpath:/application-${spring.profiles.active}" + ".properties", ignoreResourceNotFound = true)
 public class LoginManagerApplication {
 
 	@Value("${server.port}")
@@ -24,8 +27,9 @@ public class LoginManagerApplication {
 		SpringApplication.run(LoginManagerApplication.class, args);
 	}
 
-	// handle redirection from http to https
+	// handle redirection from http to https - only not in 'dev' mode
 	@Bean
+	@ConditionalOnExpression("#{'${spring.profiles.active}' == 'https'}")
 	public ServletWebServerFactory servletContainer() {
 		TomcatServletWebServerFactory tomcat = new TomcatServletWebServerFactory() {
 			@Override
