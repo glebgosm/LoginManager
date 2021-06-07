@@ -16,7 +16,6 @@ public class UserDTO {
     @NotBlank
     @Size(min = 6, max = 15)
     @Pattern.List( {
-            @Pattern(regexp="^[a-zA-Z0-9]+$"),
             @Pattern(regexp=".*[a-z].*"),
             @Pattern(regexp=".*[A-Z].*"),
             @Pattern(regexp=".*[0-9].*")
