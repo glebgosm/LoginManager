@@ -7,23 +7,31 @@ import org.springframework.stereotype.Component;
 @Component
 @ConditionalOnExpression("#{'${persistence.mode}'.equalsIgnoreCase('PostgreSQL')}")
 public class PostgreSQLUserDAO implements UserDAO {
+
+    private UserRepository userRepository;
+
+    public PostgreSQLUserDAO(UserRepository userRepository) {
+        this.userRepository = userRepository;
+    }
+
     @Override
     public User createUser(String userName, String password) {
-        return null;
+        User user = new User(userName, password);
+        return userRepository.save(user);
     }
 
     @Override
     public Iterable<User> getUsers() {
-        return null;
+        return userRepository.findAll();
     }
 
     @Override
     public Iterable<User> getUserByName(String userName) {
-        return null;
+        return userRepository.findByName(userName);
     }
 
     @Override
     public User getUserById(long id) {
-        return null;
+        return userRepository.findById(id).orElse(null);
     }
 }

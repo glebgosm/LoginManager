@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:main" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6e236249-6c04-4806-b9bc-b40c3fa2990a" name="Default Changelist" comment="Switched to Spring Data JDBC API + replaced UserFactory with @ConditionalOnExpression beans">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application-test.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/gleb/login_manager/dao/PostgreSQLUserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/gleb/login_manager/dao/PostgreSQLUserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.3.1\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1tQhnkBoAfhfSH2e9KfcaHBiF6v" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="IntroduceConstantDialog.RECENTS_KEY">
+      <recent name="org.gleb.login_manager.dao.H2UserDAO" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Java\Projects\LoginManager\src\main\resources" />
+      <recent name="D:\Java\Projects\LoginManager\src\main\resources\templates" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.gleb.login_manager.service" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="LoginManagerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.gleb.login_manager.LoginManagerApplication" />
+      <module name="login_manager" />
+      <option name="VM_PARAMETERS" value="-Dspring.profiles.active=dev" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.gleb.login_manager.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.LoginManagerApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6e236249-6c04-4806-b9bc-b40c3fa2990a" name="Default Changelist" comment="" />
+      <created>1622707395870</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1622707395870</updated>
+    </task>
+    <task id="LOCAL-00001" summary="schema.sql">
+      <created>1622803364120</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1622803364120</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Switched to HTTPS protocol">
+      <created>1622810972925</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1622810972925</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Engaging HTTPS protocol in 'https' profile only">
+      <created>1623080018437</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1623080018437</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Engaging HTTPS protocol in 'https' profile only">
+      <created>1623080079653</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1623080079653</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Polishing">
+      <created>1623080134277</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1623080134277</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Switched to Spring Data JDBC API + replaced UserFactory with @ConditionalOnExpression beans">
+      <created>1623080233734</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1623080233734</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Switched to Spring Data JDBC API + replaced UserFactory with @ConditionalOnExpression beans">
+      <created>1623080323611</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1623080323611</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="schema.sql" />
+    <MESSAGE value="Switched to HTTPS protocol" />
+    <MESSAGE value="Engaging HTTPS protocol in 'https' profile only" />
+    <MESSAGE value="Polishing" />
+    <MESSAGE value="Switched to Spring Data JDBC API + replaced UserFactory with @ConditionalOnExpression beans" />
+    <option name="LAST_COMMIT_MESSAGE" value="Switched to Spring Data JDBC API + replaced UserFactory with @ConditionalOnExpression beans" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="211" y="104" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1623071535376">
+      <screen x="74" y="0" width="1366" height="900" />
+    </state>
+    <state x="211" y="104" key="#com.intellij.execution.impl.EditConfigurationsDialog/74.0.1366.900@74.0.1366.900" timestamp="1623071535376" />
+    <state x="613" y="213" key="#com.intellij.ide.util.MemberChooser" timestamp="1623080900138">
+      <screen x="74" y="0" width="1366" height="900" />
+    </state>
+    <state x="613" y="213" key="#com.intellij.ide.util.MemberChooser/74.0.1366.900@74.0.1366.900" timestamp="1623080900138" />
+    <state x="802" y="255" key="#com.intellij.ide.util.MemberChooser/74.0.1846.1080@74.0.1846.1080" timestamp="1622790875812" />
+    <state x="780" y="408" width="433" height="272" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1622834958841">
+      <screen x="74" y="0" width="1846" height="1080" />
+    </state>
+    <state x="780" y="408" width="433" height="272" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/74.0.1846.1080@74.0.1846.1080" timestamp="1622834958841" />
+    <state x="590" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1622791696380">
+      <screen x="74" y="0" width="1846" height="1080" />
+    </state>
+    <state x="590" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/74.0.1846.1080@74.0.1846.1080" timestamp="1622791696380" />
+    <state x="487" y="196" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1623079539248">
+      <screen x="74" y="0" width="1366" height="900" />
+    </state>
+    <state x="487" y="196" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/74.0.1366.900@74.0.1366.900" timestamp="1623079539248" />
+    <state x="287" y="104" key="DBNavigator.ProjectSettingsDialog" timestamp="1623080769453">
+      <screen x="74" y="0" width="1366" height="900" />
+    </state>
+    <state x="287" y="104" key="DBNavigator.ProjectSettingsDialog/74.0.1366.900@74.0.1366.900" timestamp="1623080769453" />
+    <state width="431" height="466" key="DebuggerActiveHint" timestamp="1622730921412">
+      <screen x="74" y="0" width="1846" height="1080" />
+    </state>
+    <state width="431" height="466" key="DebuggerActiveHint/74.0.1846.1080@74.0.1846.1080" timestamp="1622730921412" />
+    <state x="777" y="294" key="FileChooserDialogImpl" timestamp="1622803521202">
+      <screen x="74" y="0" width="1846" height="1080" />
+    </state>
+    <state x="777" y="294" key="FileChooserDialogImpl/74.0.1846.1080@74.0.1846.1080" timestamp="1622803521202" />
+    <state width="1322" height="192" key="GridCell.Tab.0.bottom" timestamp="1623080327577">
+      <screen x="74" y="0" width="1366" height="900" />
+    </state>
+    <state width="1322" height="192" key="GridCell.Tab.0.bottom/74.0.1366.900@74.0.1366.900" timestamp="1623080327577" />
+    <state width="1802" height="474" key="GridCell.Tab.0.bottom/74.0.1846.1080@74.0.1846.1080" timestamp="1622835019301" />
+    <state width="1322" height="192" key="GridCell.Tab.0.center" timestamp="1623080327577">
+      <screen x="74" y="0" width="1366" height="900" />
+    </state>
+    <state width="1322" height="192" key="GridCell.Tab.0.center/74.0.1366.900@74.0.1366.900" timestamp="1623080327577" />
+    <state width="1802" height="474" key="GridCell.Tab.0.center/74.0.1846.1080@74.0.1846.1080" timestamp="1622835019301" />
+    <state width="1322" height="192" key="GridCell.Tab.0.left" timestamp="1623080327577">
+      <screen x="74" y="0" width="1366" height="900" />
+    </state>
+    <state width="1322" height="192" key="GridCell.Tab.0.left/74.0.1366.900@74.0.1366.900" timestamp="1623080327577" />
+    <state width="1802" height="474" key="GridCell.Tab.0.left/74.0.1846.1080@74.0.1846.1080" timestamp="1622835019301" />
+    <state width="1322" height="192" key="GridCell.Tab.0.right" timestamp="1623080327577">
+      <screen x="74" y="0" width="1366" height="900" />
+    </state>
+    <state width="1322" height="192" key="GridCell.Tab.0.right/74.0.1366.900@74.0.1366.900" timestamp="1623080327577" />
+    <state width="1802" height="474" key="GridCell.Tab.0.right/74.0.1846.1080@74.0.1846.1080" timestamp="1622835019301" />
+    <state width="1322" height="374" key="GridCell.Tab.1.bottom" timestamp="1623079080842">
+      <screen x="74" y="0" width="1366" height="900" />
+    </state>
+    <state width="1322" height="374" key="GridCell.Tab.1.bottom/74.0.1366.900@74.0.1366.900" timestamp="1623079080842" />
+    <state width="1802" height="358" key="GridCell.Tab.1.bottom/74.0.1846.1080@74.0.1846.1080" timestamp="1622801104610" />
+    <state width="1322" height="374" key="GridCell.Tab.1.center" timestamp="1623079080842">
+      <screen x="74" y="0" width="1366" height="900" />
+    </state>
+    <state width="1322" height="374" key="GridCell.Tab.1.center/74.0.1366.900@74.0.1366.900" timestamp="1623079080842" />
+    <state width="1802" height="358" key="GridCell.Tab.1.center/74.0.1846.1080@74.0.1846.1080" timestamp="1622801104609" />
+    <state width="1322" height="374" key="GridCell.Tab.1.left" timestamp="1623079080842">
+      <screen x="74" y="0" width="1366" height="900" />
+    </state>
+    <state width="1322" height="374" key="GridCell.Tab.1.left/74.0.1366.900@74.0.1366.900" timestamp="1623079080842" />
+    <state width="1802" height="358" key="GridCell.Tab.1.left/74.0.1846.1080@74.0.1846.1080" timestamp="1622801104609" />
+    <state width="1322" height="374" key="GridCell.Tab.1.right" timestamp="1623079080842">
+      <screen x="74" y="0" width="1366" height="900" />
+    </state>
+    <state width="1322" height="374" key="GridCell.Tab.1.right/74.0.1366.900@74.0.1366.900" timestamp="1623079080842" />
+    <state width="1802" height="358" key="GridCell.Tab.1.right/74.0.1846.1080@74.0.1846.1080" timestamp="1622801104609" />
+    <state x="498" y="171" key="SettingsEditor" timestamp="1622803392649">
+      <screen x="74" y="0" width="1846" height="1080" />
+    </state>
+    <state x="498" y="171" key="SettingsEditor/74.0.1846.1080@74.0.1846.1080" timestamp="1622803392649" />
+    <state x="589" y="272" key="Vcs.Push.Dialog.v2" timestamp="1622810980703">
+      <screen x="74" y="0" width="1846" height="1080" />
+    </state>
+    <state x="589" y="272" key="Vcs.Push.Dialog.v2/74.0.1846.1080@74.0.1846.1080" timestamp="1622810980703" />
+    <state x="619" y="207" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1622793179980">
+      <screen x="74" y="0" width="1846" height="1080" />
+    </state>
+    <state x="619" y="207" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/74.0.1846.1080@74.0.1846.1080" timestamp="1622793179980" />
+    <state x="420" y="190" width="672" height="678" key="search.everywhere.popup" timestamp="1623077382258">
+      <screen x="74" y="0" width="1366" height="900" />
+    </state>
+    <state x="420" y="190" width="672" height="678" key="search.everywhere.popup/74.0.1366.900@74.0.1366.900" timestamp="1623077382258" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/gleb/login_manager/dao/PostgreSQLUserDAO.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
