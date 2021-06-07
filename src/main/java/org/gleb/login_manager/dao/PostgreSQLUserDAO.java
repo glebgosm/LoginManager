@@ -1,9 +1,11 @@
 package org.gleb.login_manager.dao;
 
 import org.gleb.login_manager.model.User;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnExpression;
+import org.springframework.stereotype.Component;
 
-import java.util.List;
-
+@Component
+@ConditionalOnExpression("#{'${persistence.mode}'.equalsIgnoreCase('PostgreSQL')}")
 public class PostgreSQLUserDAO implements UserDAO {
     @Override
     public User createUser(String userName, String password) {
@@ -11,12 +13,12 @@ public class PostgreSQLUserDAO implements UserDAO {
     }
 
     @Override
-    public List<User> getUsers() {
+    public Iterable<User> getUsers() {
         return null;
     }
 
     @Override
-    public User getUserByName(String userName) {
+    public Iterable<User> getUserByName(String userName) {
         return null;
     }
 

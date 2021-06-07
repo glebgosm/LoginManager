@@ -38,7 +38,7 @@ public class WebsiteController {
 
     @PostMapping("/login")
     public String login(Model model, UserDTO userDTO) {
-        User user = userDAO.getUserByName(userDTO.getUserName());
+        User user = userDAO.getUserByName(userDTO.getUserName()).iterator().next();
         if (user == null) {
             model.addAttribute("noSuchUser", Boolean.TRUE);
             return "login.html";
@@ -74,7 +74,7 @@ public class WebsiteController {
 
     @GetMapping("/login/{userName}")
     public String loginUser(Model model, @PathVariable String userName) throws Exception {
-        User user = userDAO.getUserByName(userName);
+        User user = userDAO.getUserByName(userName).iterator().next();
         if (user == null) throw new Exception("No such user.");
         model.addAttribute("userName", userName);
         model.addAttribute("userDTO", new UserDTO());
@@ -83,7 +83,7 @@ public class WebsiteController {
 
     @PostMapping("/login/{userName}")
     public String loginUser(Model model, UserDTO userDTO, @PathVariable String userName) {
-        User user = userDAO.getUserByName(userName);
+        User user = userDAO.getUserByName(userName).iterator().next();
         if (userDTO.getPassword() == null || !userDTO.getPassword().equals(user.getPassword())) {
             model.addAttribute("passwordIsValid", Boolean.FALSE);
             return "simple_login.html";

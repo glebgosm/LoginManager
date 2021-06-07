@@ -1,14 +1,19 @@
 package org.gleb.login_manager.dao;
 
 import org.gleb.login_manager.model.User;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnExpression;
+import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
 /**
  * User dispatcher which stores registered users in an <code>ArrayList</code>
  */
+@Component
+@ConditionalOnExpression("#{'${persistence.mode}'.equalsIgnoreCase('inmem_array')}")
 public class ArrayListUserDAO implements UserDAO {
 
     private List<User> users = new ArrayList<>();
@@ -24,12 +29,12 @@ public class ArrayListUserDAO implements UserDAO {
     }
 
     @Override
-    public List<User> getUsers() {
+    public Iterable<User> getUsers() {
         return users;
     }
 
     @Override
-    public User getUserByName(String userName) {
+    public Iterable<User> getUserByName(String userName) {
         if (userName == null || userName.isBlank()) return null;
         List<User> userList =
                 users.stream()
@@ -39,7 +44,7 @@ public class ArrayListUserDAO implements UserDAO {
         if (userList.size()>1) {
             // TODO log error "multiple users with the same name"
         }
-        return userList.get(0);
+        return userList;
     }
 
     @Override

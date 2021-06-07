@@ -1,13 +1,26 @@
 package org.gleb.login_manager.model;
 
+import org.springframework.data.annotation.Id;
+import org.springframework.data.annotation.PersistenceConstructor;
+import org.springframework.data.relational.core.mapping.Table;
+
 /**
  * Simple username+password container + user id
  */
+@Table("users")
 public class User {
-    private long id;
+    @Id
+    private Long id;
     private String userName;
     private String password;
 
+    public User(String userName, String password) {
+        this.id = null;
+        this.userName = userName;
+        this.password = password;
+    }
+
+    @PersistenceConstructor
     public User(long id, String userName, String password) {
         this.id = id;
         this.userName = userName;

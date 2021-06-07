@@ -2,8 +2,6 @@ package org.gleb.login_manager.dao;
 
 import org.gleb.login_manager.model.User;
 
-import java.util.List;
-
 /**
  * User objects dispatcher
  */
@@ -20,14 +18,14 @@ public interface UserDAO {
      * Get all registered users
      * @return list of users
      */
-    List<User> getUsers();
+    Iterable<User> getUsers();
 
     /**
      * Find user by user name
      * @param userName user name
      * @return user with the specified user name
      */
-    User getUserByName(String userName);
+    Iterable<User> getUserByName(String userName);
 
     /**
      * Find user by id
